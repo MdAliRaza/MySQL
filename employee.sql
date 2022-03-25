@@ -50,7 +50,7 @@ FROM employees
 JOIN jobs ON employees.job_id = jobs.job_id 
 WHERE job_title = 'Accountant';
 
--- for ‘ANALYST’
+-- for ‘ANALYST’ part
 SELECT job_title , round(avg(salary),2) As 'Average Salary'
 FROM employees 
 JOIN jobs ON employees.job_id = jobs.job_id 
