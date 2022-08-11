@@ -1,13 +1,12 @@
 -- first run create_movie.sql from database_script folder to create the database in your MySQL
-
 use movie;
 
 -- 1. Write a SQL query to find those reviewers who have rated nothing for some movies. Return reviewer name.
 
-select rev_name 'Reviewer' -- selecting reviewer name 
-from reviewer -- from reviewer table
-where rev_id in -- where reviewer id is in the subquery
-(select rev_id from rating where rev_stars = 0); -- selecting those reviewer ids from rating table where reviewed stars are zero
+SELECT rev_name 'Reviewer' -- selecting reviewer name 
+FROM reviewer -- from reviewer table
+WHERE rev_id in -- where reviewer id is in the subquery
+(SELECT rev_id FROM rating WHERE rev_stars = 0); -- selecting those reviewer ids from rating table where reviewed stars are zero
 
 -- 2. Write a SQL query to find the movies, which have been reviewed by any reviewer body except by 'Paul Monks'. Return movie title.
 
