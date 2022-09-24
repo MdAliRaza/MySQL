@@ -1,4 +1,5 @@
 -- first run create_movie.sql from database_script folder to create the database in your MySQL
+
 use movie;
 
 -- 1. Write a SQL query to find those reviewers who have rated nothing for some movies. Return reviewer name.
