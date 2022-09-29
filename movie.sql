@@ -1,5 +1,6 @@
 -- first run create_movie.sql from database_script folder to create the database in your MySQL
 use movie;
+
 -- 1. Write a SQL query to find the actors who were cast in the movie 'Annie Hall'. Return actor first name, last name and role.
 
 select act_fname 'First Name', act_lname 'Last Name', role 'Role' -- selecting first and last name of actors and role columns
